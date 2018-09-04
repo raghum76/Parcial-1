@@ -11,26 +11,26 @@ main()
       cout<<"[A]Problema1 [B]Problema2 [C]Problema3 [S]alir\n";Opm=getch();
       switch(Opm)
       {
-      	case 'A': case 'a':
-      		cout<<"Ingrese el primer numero: ";
-      		cin>>num1;
-      		cout<<"Ingrese el segundo numero: ";
-      		cin>>num2;
-      		if(num1 > num2){
+      		case 'A': case 'a':
+      			cout<<"Ingrese el primer numero: ";
+      			cin>>num1;
+      			cout<<"Ingrese el segundo numero: ";
+      			cin>>num2;
+      			if(num1 > num2){
       			//si el modulo es cero, entonces es multiplo
-      			if(num1%num2 == 0)
-      				cout<<"\nEl numero "<<num1
+      				if(num1%num2 == 0)
+      					cout<<"\nEl numero "<<num1
       					<<" es multiplo de "<<num2;
-      			else
-      				cout<<"\nEl numero "<<num1
+      				else
+      					cout<<"\nEl numero "<<num1
       					<<" NO es multiplo de "<<num2;
-	    	}
-			  		if(num2%num1 == 0)
-			  		cout<<"\nEl numero "<<num2
-			  			<<" es multiplo de "<<num1;
-			  		else
-			  			cout<<"\nEl numero "<<num2
-			  				<<" No es multiplo de "<<num1;
+	    		}
+			if(num2%num1 == 0)
+			  	cout<<"\nEl numero "<<num2
+			  	<<" es multiplo de "<<num1;
+			else
+			  	cout<<"\nEl numero "<<num2
+			  	<<" No es multiplo de "<<num1;
 			getche();
 			break;
 		case 'B': case 'b':
@@ -48,14 +48,14 @@ main()
 			cin>>distancia;
 			cout<<" Ingresa el tiempo de estancia: ";
 			cin>>tiempo;
-				if((distancia *2) >800 &&(tiempo>7)){
+			if((distancia *2) >800 &&(tiempo>7)){
 				
 				precio=distancia*2*17*.70;
 			}
-				else{
+			else{
 				precio=distancia*2*.17;
-				}
-				cout<<"Tu cantidad final es: "<<precio;
+			}
+			cout<<"Tu cantidad final es: "<<precio;
 			getche();
 			break;	
 	  }
